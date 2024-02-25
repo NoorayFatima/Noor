@@ -1,0 +1,53 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    position: relative;
+    float: left;
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Apply styles for section title and content */
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%;
+    }
+
+    .section:nth-child(3) {
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
